@@ -1,2 +1,5 @@
 server:
   contextPath: /restapi/
+  
+admin.username : bill
+admin.password : abc123
