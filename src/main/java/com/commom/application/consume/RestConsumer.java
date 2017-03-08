@@ -17,11 +17,8 @@ public class RestConsumer {
         String plainCredentials="bill:abc123";
         String base64Credentials = new String(Base64.encodeBase64(plainCredentials.getBytes()));
         System.out.println("base64Credentials = "+base64Credentials);
-
-        
-        
         HttpHeaders headers = new HttpHeaders();
-        //headers.add("Authorization", "Basic " + base64Credentials);
+        headers.add("Authorization", "Basic " + base64Credentials);
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         return headers;
     }
