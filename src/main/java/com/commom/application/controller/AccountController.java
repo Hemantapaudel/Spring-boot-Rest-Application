@@ -18,7 +18,7 @@ public class AccountController {
 	
 	
 	@RequestMapping(value ={"getaccount"},
-			produces="application/json",
+			produces={"application/json","application/xml"},
 			method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public Account getAccountWithParam(@RequestParam(value ="account") String account) {
