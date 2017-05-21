@@ -1,13 +1,26 @@
-package com.commom.application.model;
+package com.commom.application.data.entity;
 
 import java.time.LocalDateTime;
+
+import org.springframework.data.annotation.Id;
 public class Account {
 
+	@Id
+	String id;
+	
 	String accountType;
 	String accountNumber;
 	double balaceAmmount;
 	LocalDateTime dateTime;
 
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	
 	public String getAccountType() {
 		return accountType;
 	}

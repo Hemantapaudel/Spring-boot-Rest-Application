@@ -1,4 +1,4 @@
-package com.commom.application.containercustomizer;
+package com.commom.application.config;
 
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
