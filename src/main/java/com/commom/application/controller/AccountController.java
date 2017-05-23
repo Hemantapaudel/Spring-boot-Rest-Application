@@ -23,6 +23,8 @@ public class AccountController {
 
 	@Autowired
 	private AccountRepository accountRepository;
+	
+	
 
 	@RequestMapping(value = { "getAccounts" }, produces = { "application/json" },
 			method = { RequestMethod.GET })
@@ -38,6 +40,7 @@ public class AccountController {
 	@ResponseBody
 	public Account createAccount(@RequestBody Account account) {
 		Account accounts = accountRepository.save(account);
+		
 		return accounts;
 	}
 

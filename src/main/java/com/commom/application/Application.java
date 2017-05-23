@@ -13,6 +13,8 @@ public class Application {
 		ConfigurableApplicationContext  applicationContext =SpringApplication.run(Application.class, args);
 		String[] beanNames = applicationContext.getBeanDefinitionNames();
 		Arrays.sort(beanNames);
-		Arrays.stream(beanNames).forEach(str -> System.out.println(str));
+		Arrays.stream(beanNames).forEach(str -> System.out.println(str));	
+		
+
 	}
 }
